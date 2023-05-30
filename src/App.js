@@ -3,7 +3,7 @@ import TodoList from './components/TodoList'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-import './css/Todo.css'
+import './index.css'
 
 const filterByStatus = (listTodos = [], status = '', id) => {
   switch (status) {
@@ -89,6 +89,8 @@ class App extends PureComponent {
 
   render() {
     const { listTodos, isCheckedAll, status, todoEditingId } = this.state
+
+
     return (
       <div className="todoapp">
         <Header
